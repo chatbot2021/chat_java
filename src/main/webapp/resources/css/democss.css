@@ -1,0 +1,208 @@
+.header {
+	background-color: gainsboro;
+	color: chocolate;
+}
+
+#adminlogin {
+	margin-top: 50;
+	border-collapse: collapse;
+}
+
+#viewCaseDetailsAdmin {
+	width: 120px;
+}
+
+.copyrightfooteradmin {
+	width: 100%;
+	margin-top: 520px;
+}
+
+.copyrightfooter {
+	width: 100%;
+	margin-top: 400px;
+}
+
+.caseDetails {
+	border-collapse: collapse;
+	margin-left: 15px;
+}
+
+.tableCaseRow {
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	height: 30;
+	font-size: 12;
+	font-weight: normal;
+	border-right: white;
+	border-right-style: solid;
+	border-right-width: thin;
+	padding-bottom: 1em;
+}
+
+.tableCaseDetailRow {
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	height: 30;
+	font-size: 12;
+	font-weight: normal;
+	border-right-color: grey;
+	border-right-style: solid;
+	border-right-width: thin;
+	border-bottom-color: grey;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+}
+
+#footer {
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	width: 100%
+}
+
+.salutation {
+	font-size: 16;
+	margin-top: 50;
+	font: 12px 'Segeo UI', tahoma, arial, helvetica, sans-serif;
+	text-align: left;
+}
+
+.formColumnSplitter {
+	width: 0.5px;
+	background-color: darkgray;
+}
+
+.formColumnSplit {
+	padding-left: 25px;
+}
+
+.labelValue {
+	font: 12px 'Segeo UI', tahoma, arial, helvetica, sans-serif;
+	text-align: left;
+	font-weight: bold;
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.labelDesc {
+	font: 12px 'Segeo UI', tahoma, arial, helvetica, sans-serif;
+	text-align: left;
+}
+
+.labelDescUser {
+	font: 14px 'Segeo UI', tahoma, arial, helvetica, sans-serif;
+	text-align: left;
+}
+
+.labelValueUser {
+	font: 14px 'Segeo UI', tahoma, arial, helvetica, sans-serif;
+	text-align: left;
+	font-weight: bold;
+}
+
+.transCaseDetailRow {
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font: 12px 'Segeo UI', tahoma, arial, helvetica, sans-serif;
+	text-align: left;
+	font-weight: bold;
+}
+
+.subHeader {
+	font: 14px 'Segeo UI', tahoma, arial, helvetica, sans-serif;
+	text-align: left;
+	font-weight: bold;
+	color: orangered;
+}
+
+.tableTransDetailRow {
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	height: 30;
+	font: 12px 'Segeo UI', tahoma, arial, helvetica, sans-serif;
+	text-align: center;
+	border-right-color: grey;
+	border-right-style: solid;
+	border-right-width: thin;
+	border-bottom-color: grey;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	border-left-color: grey;
+	border-left-style: solid;
+	border-left-width: thin;
+}
+
+.tableTransRowHeader {
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	height: 30;
+	font: 12px 'Segeo UI', tahoma, arial, helvetica, sans-serif;
+	font-weight: normal;
+	border-right: white;
+	border-right-style: solid;
+	border-right-width: thin;
+	padding-bottom: 1em;
+}
+
+.submitUserAction {
+	width: 120px;
+	margin-left: 350;
+}
+
+.thankYouDiv {
+	position: absolute;
+	width: 55%;
+	height: 300px;
+	z-index: 15;
+	top: 50%;
+	left: 50%;
+	margin: -200px 0 0 -350px;
+	-webkit-border-radius: 10px;
+	background-color: white;
+}
+
+#spnAlert {
+	color: lightseagreen;
+	font: 16px 'verdana', tahoma, arial, helvetica, sans-serif;
+	text-align: center;
+	margin-top: 600px;
+}
+
+.tableTransDetailUserAction {
+	border-right-color: orange;
+	border-right-style: solid;
+	border-right-width: medium;
+	border-left-color: orange;
+	border-left-style: solid;
+	border-left-width: medium;
+	border-bottom-color: orange;
+	border-bottom-style: solid;
+	border-bottom-width: medium;
+	border-top-color: orange;
+	border-top-style: solid;
+	border-top-width: medium;
+}
+
+#closeCaseDetail {
+	font-family: verdana;
+    font-size: 12;
+    font-weight: 800;
+    /* color: deepskyblue; */
+    color: chocolate;
+}
+
+.talktext table, .talktext th, .talktext td {
+	border: 1px dotted black;
+}
