@@ -1,0 +1,34 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+   http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+
+	<bean id="loginDelegate" class="com.jcg.examples.delegate.LoginDelegate">
+		<property name="userService" ref="userService"></property>
+	</bean>
+
+	<bean id="userService" class="com.jcg.examples.service.impl.UserServiceImpl">
+		<property name="userDao" ref="userDao"></property>
+	</bean>
+
+	<bean name="userDao" class="com.jcg.examples.dao.impl.UserDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="org.postgresql.Driver" />
+		<property name="url" value="jdbc:postgresql://ec2-54-163-255-181.compute-1.amazonaws.com:5432/d1snn1nebn33so" />
+		<property name="username" value="kerovivcwmdacg" />
+		<property name="password" value="a5b81eaa325cda61f20e5375dafb20d824cd08021737bc78f75116ced3c2f015" />
+	</bean>
+	
+	
+
+</beans>
