@@ -29,7 +29,7 @@
 </script>
 <script>
   IBMChat.init({
-    el: 'ibm_chat_root',
+    el: 'ibm-chat-root',
     baseURL: 'https://gateway.watsonplatform.net/conversation/api',
     botID: '04c1f7c2-c655-46f8-9527-809809fc4282',
     XIBMClientID: 'fae8a157-a382-43e2-bddb-59ef82946481',
