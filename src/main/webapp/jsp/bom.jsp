@@ -22,10 +22,10 @@
 <script>
   IBMChat.init({
     el: 'ibm_chat_root',
-    baseURL: 'https://api.ibm.com/virtualagent/run/api/v1',
-    botID: 'YOUR_BOT_ID',
-    XIBMClientID: 'YOUR_IBM_CLIENT_ID',
-    XIBMClientSecret: 'YOUR_IBM_CLIENT_SECRET'
+    baseURL: 'https://gateway.watsonplatform.net/conversation/api',
+    botID: '04c1f7c2-c655-46f8-9527-809809fc4282',
+    XIBMClientID: 'fae8a157-a382-43e2-bddb-59ef82946481',
+    XIBMClientSecret: 'mdqboUrRRbyO'
   });
 </script>
 </head>
