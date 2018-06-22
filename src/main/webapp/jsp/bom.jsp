@@ -17,7 +17,15 @@
     background-repeat: no-repeat;
 }
     </style>  
-<script src='https://unpkg.com/@watson-virtual-agent/chat-widget@1.6.0/dist/chat.min.js'>
+</head>
+<body background="<c:url value="resources/images/NewGenBank-chatbot.jpg" />">
+ 
+     <div id="ibm-chat-root"></div>
+  
+
+    
+</body>
+    <script src='https://unpkg.com/@watson-virtual-agent/chat-widget@1.6.0/dist/chat.min.js'>
 </script>
 <script>
   IBMChat.init({
@@ -28,14 +36,4 @@
     XIBMClientSecret: 'mdqboUrRRbyO'
   });
 </script>
-</head>
-<body background="<c:url value="resources/images/NewGenBank-chatbot.jpg" />">
- 
-       <div id="ibm-chat-root" class="innerdiv">
-          
-       </div>
-  
-
-    
-</body>
 </html>
