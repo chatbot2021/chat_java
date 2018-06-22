@@ -171,6 +171,14 @@ public class LoginController
 		
 		return model;
 	}
+	
+	@RequestMapping(value="/bom",method=RequestMethod.GET)
+	public ModelAndView bom(HttpServletRequest request, HttpServletResponse response, LoginBean loginBean)
+	{
+		ModelAndView model = new ModelAndView("bom");
+		
+		return model;
+	}
 
 	public static int gen() {
 		Random r = new Random(System.currentTimeMillis());
