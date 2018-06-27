@@ -4,36 +4,64 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Tapco</title>
-<style>
-
-.innerdiv {
- position: fixed;
-    bottom: 0px;
-    right: 0px; 
-}
-    body {    
-    background-repeat: no-repeat;
-}
-    </style>  
-</head>
-<body background="<c:url value="resources/images/NewGenBank-chatbot.jpg" />">
- 
-     <div id="ibm-chat-root"></div>
-  
-
-    
-</body>
-    <script src='https://unpkg.com/@watson-virtual-agent/chat-widget@1.6.0/dist/chat.min.js'>
-</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
 <script>
-  IBMChat.init({
-    el: 'ibm-chat-root',
-    baseURL: 'https://gateway.watsonplatform.net/conversation/api',
-    botID: '04c1f7c2-c655-46f8-9527-809809fc4282',
-    XIBMClientID: 'fae8a157-a382-43e2-bddb-59ef82946481',
-    XIBMClientSecret: 'mdqboUrRRbyO'
-  });
+
+$(function() {
+
+var entries = [];
+var dmJSON = "https://www.nseindia.com/live_market/dynaContent/live_watch/stock_watch/foSecStockWatch.json";
+
+$.getJSON( dmJSON, function(data) {
+	$("#time").html(data.time);
+   $.each(data.data, function(i, f) {
+	var a="";
+	var b="";
+	if(f.open ==f.high){
+		a="Sell";
+		b="red";
+	} else if(f.open ==f.low) {
+		a="Buy";
+		b="green";
+	}
+      var tblRow = "<tr>" + 
+	  "<td>" + f.symbol + "</td>" + 
+	  "<td>" + f.open + "</td>"  +
+	  "<td>" + f.high + "</td>"  +
+	  "<td>" + f.low + "</td>"  +
+	  "<td>" + f.ltP + "</td>"  +
+		"<td bgcolor="+b+">" + a + "</td>"  +	
+	  "</tr>"
+       $(tblRow).appendTo("#entrydata tbody");
+ });
+
+});
+
+});
 </script>
+</head>
+
+<body>
+Market Time:<b id="time"></b>
+<div class="wrapper">
+<div class="profile">
+<table id= "entrydata" border="1">
+<thead>
+        <th>Symbol</th>
+        <th>Open</th>      
+		<th>High</th>
+		<th>Low</th>
+		<th>LTP</th>
+		<th>OHL</th>
+    </thead>
+  <tbody>
+
+   </tbody>
+</table>
+
+</div>
+</div>
+
+</body>
+
 </html>
